@@ -1,0 +1,20 @@
+{
+	"name": "callmez/SpeedPHP",
+	"description": "Speed for php.",
+	"keywords": ["speed", "php", "framework"],
+	"homepage": "http://www.speedphp.com/",
+	"type": "library",
+	"support": {
+		"issues": "https://github.com/callmez/SpeedPHP/issues?state=open",
+		"forum": "http://www.speedphp.com/forum.php",
+		"source": "https://github.com/callmez/SpeedPHP/"
+	},
+	"autoload": {
+		"psr-0": { "SpeedPHP\\": "/" }
+	},
+	"require": {
+		"php": ">=5.2",
+		"ext-mbstring": "*",
+		"lib-pcre": "*"
+	},
+}
