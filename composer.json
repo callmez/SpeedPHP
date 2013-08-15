@@ -11,7 +11,7 @@
 		"source": "https://github.com/callmez/SpeedPHP/"
 	},
 	"autoload": {
-		"psr-0": { "SpeedPHP\\": "/" }
+		"files": ["SpeedPHP.php"]
 	},
 	"require": {
 		"php": ">=5.2",
