@@ -4,6 +4,7 @@
 	"keywords": ["speed", "php", "framework"],
 	"homepage": "http://www.speedphp.com/",
 	"type": "library",
+	"license": "BSD-2-Clause",
 	"support": {
 		"issues": "https://github.com/callmez/SpeedPHP/issues?state=open",
 		"forum": "http://www.speedphp.com/forum.php",
