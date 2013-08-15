@@ -12,8 +12,8 @@ if (substr(PHP_VERSION, 0, 1) != '5')exit("SpeedPHP框架环境要求PHP5！");
  */
 
 // 定义系统路径
-if(!defined('SP_PATH')) define('SP_PATH', dirname(__FILE__).'/SpeedPHP');
-if(!defined('APP_PATH')) define('APP_PATH', dirname(__FILE__).'/app');
+if(!defined('SP_PATH')) define('SP_PATH', dirname(__FILE__));
+if(!defined('APP_PATH')) define('APP_PATH', dirname($_SERVER['SCRIPT_FILENAME']));
 
 // 载入核心函数库
 require(SP_PATH."/spFunctions.php");
@@ -69,10 +69,10 @@ if(TRUE == $GLOBALS['G_SP']['url']["url_path_info"] && !empty($_SERVER['PATH_INF
 }
 
 // 构造执行路由
-$__controller = isset($_REQUEST[$GLOBALS['G_SP']["url_controller"]]) ? 
+$GLOBALS['__controller'] = isset($_REQUEST[$GLOBALS['G_SP']["url_controller"]]) ? 
 	$_REQUEST[$GLOBALS['G_SP']["url_controller"]] : 
 	$GLOBALS['G_SP']["default_controller"];
-$__action = isset($_REQUEST[$GLOBALS['G_SP']["url_action"]]) ? 
+$GLOBALS['__action'] = isset($_REQUEST[$GLOBALS['G_SP']["url_action"]]) ? 
 	$_REQUEST[$GLOBALS['G_SP']["url_action"]] : 
 	$GLOBALS['G_SP']["default_action"];
 

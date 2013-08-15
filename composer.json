@@ -14,8 +14,6 @@
 		"files": ["SpeedPHP/SpeedPHP.php"]
 	},
 	"require": {
-		"php": ">=5.2",
-		"ext-mbstring": "*",
-		"lib-pcre": "*"
+		"php": ">=5.2"
 	}
 }
