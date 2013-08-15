@@ -16,5 +16,5 @@
 		"php": ">=5.2",
 		"ext-mbstring": "*",
 		"lib-pcre": "*"
-	},
+	}
 }
