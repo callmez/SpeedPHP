@@ -19,7 +19,7 @@ if(!defined('APP_PATH')) define('APP_PATH', dirname($_SERVER['SCRIPT_FILENAME'])
 require(SP_PATH."/spFunctions.php");
 
 // 载入配置文件
-$GLOBALS['G_SP'] = spConfigReady(require(SP_PATH."/spConfig.php"),$spConfig);
+$GLOBALS['G_SP'] = spConfigReady(require(SP_PATH."/spConfig.php"),$GLOBALS['spConfig']);
 
 // 根据配置文件进行一些全局变量的定义
 if('debug' == $GLOBALS['G_SP']['mode']){
